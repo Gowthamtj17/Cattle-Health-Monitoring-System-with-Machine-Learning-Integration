@@ -193,8 +193,8 @@ Cattle-Health-Monitoring-System/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Gowthamtj17/Cattle-Health-Monitoring-System-with-Machine-Learning-Integration.git
-cd Cattle-Health-Monitoring-System-with-Machine-Learning-Integration
+git clone https://github.com/Gowthamtj17/SmartCattleMLSystem.git
+cd SmartCattleMLSystem
 ```
 
 ### 2. Set Up the Backend
