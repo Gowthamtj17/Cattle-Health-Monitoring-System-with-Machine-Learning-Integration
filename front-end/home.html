@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattle Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ta,ml,kn,te,hi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+
+            <div class="website-name"><img src="./images/kb-300x300.png" alt="Logo" class="navlogo">Cattle Health
+                Monitoring</div>
+            <div>
+                <ul class="navbar">
+                    <li><a href="/front-end/home.html" id="homeLink">Home</a></li>
+                    <li><a href="/front-end/Information.html" id="infoLink">Information</a></li>
+                    <li><a href="/front-end/index.html" id="logoutLink">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="Homecontainer">
+            <section id="basic-info" class="card">
+                <h2 class="subhead"><img src="./images/R.png" alt="Logo" class="log">Cattle Health Information</h2>
+                <div class="info-grid">
+                    <p class="pp"><strong>Behavior:</strong> <span id="behavior">Loading...</span></p>
+                    <p class="pp"><strong>Heart Rate (BPM):</strong> <span id="heart-rate">Loading...</span></p>
+                    <p class="pp"><strong>Skin Temperature (°C):</strong> <span id="skin-temp">Loading...</span></p>
+                    <p class="pp"><strong>Health Status:</strong> <span id="health-status">Loading...</span></p>
+                    <p class="pp"><strong>Predicted Diseases:</strong> <span id="predicted-diseases">Loading...</span>
+                    </p>
+                    <p class="pp"><strong>Current Time:</strong> <span id="current-time">Loading...</span></p>
+                    <p class="pp"><strong>Database Timestamp:</strong> <span id="timestamp-db">Loading...</span></p>
+                </div>
+                <br>
+                <button id="toggle-details" class="btn">Show More</button>
+            </section>
+
+            <section id="detailed-info" class="card" style="display:none;">
+                <h2 class="subhead">Detailed Health Information</h2>
+                <div class="info-grid">
+                    <p class="pp"><strong>Low Activity:</strong> <span id="low-activity">Loading...</span></p>
+                    <p class="pp"><strong>Very Low Activity:</strong> <span id="very-low-activity">Loading...</span></p>
+                    <p class="pp"><strong>Localized Temperature Rise:</strong> <span
+                            id="localized-temp-rise">Loading...</span></p>
+                    <p class="pp"><strong>Moderate Heart Rate:</strong> <span id="moderate-heart-rate">Loading...</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Google Translate widget -->
+    <div id="google_translate_element"></div>
+    <script>
+        // JavaScript to handle the show/hide functionality
+        const toggleButton = document.getElementById('toggle-details');
+        const detailedInfo = document.getElementById('detailed-info');
+
+        toggleButton.addEventListener('click', function () {
+            if (detailedInfo.style.display === 'none') {
+                detailedInfo.style.display = 'block';
+                toggleButton.textContent = 'Hide Details';
+            } else {
+                detailedInfo.style.display = 'none';
+                toggleButton.textContent = 'Show More';
+            }
+        });
+    </script>
+    </div>
+
+</body>
+
+</html>

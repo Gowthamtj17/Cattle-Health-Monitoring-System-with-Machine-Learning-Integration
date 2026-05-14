@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ta,ml,kn,te,hi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false // Prevent auto display of the translation
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title"><img src=".\images\lock.png" alt="Logo" class="logo">Create an Account</h2>
+        <form id="signupForm">
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button class="bt" type="submit">Sign Up</button>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </form>
+    </div>
+    <!-- Google Translate widget -->
+    <div id="google_translate_element"></div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

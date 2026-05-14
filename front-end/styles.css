@@ -1,0 +1,502 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+nav {
+    width: 100%;
+
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 35px;
+    margin-top: 0%;
+    position: fixed;
+    background-color: #000000d0;
+    width: 100%;
+}
+
+.website-name {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #f4c649,
+        1px -1px 0 #e26363,
+        -1px 1px 0 #f3f3f3,
+        1px 1px 0 #f4f4f4;
+}
+
+.subhead,
+.subhead1 {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #E19720,
+        1px -1px 0 #811E09,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
+.subhead1 {
+    margin-top: 100px;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3a3a3a;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+
+}
+
+.navbar li {
+    flex: 1;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    margin-right: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #f4c649,
+        1px -1px 0 #e26363,
+        -1px 1px 0 #f3f3f3,
+        1px 1px 0 #ffc400;
+}
+
+.navbar a:hover {
+    background-color: #fffdfdd2;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #E19720,
+        1px -1px 0 #811E09,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
+.container {
+    margin-top: 250px;
+    max-width: 400px;
+    background-color: #fffdfd71;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #5b5454c1;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #c2c0c000;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.navlogo {
+    width: 60px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.log {
+    width: 120px;
+    vertical-align: middle;
+}
+
+/* Paragraph links */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000ed;
+}
+
+p a {
+    text-decoration: none;
+    color: #a26606;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #b9290d;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Center the content */
+.Homecontainer {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    margin-top: 20%;
+}
+
+/* Card Styles */
+.card {
+    background-color: #e0dbb9;
+    border: 5px solid #3a3a3ae9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.638);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.info-grid .pp {
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+/* Button container */
+.button-Homecontainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Button styling */
+.btn {
+    background-color: #df951ed3;
+    border: 3px solid #3a3a3ae9;
+    font-weight: bold;
+    padding: 10px 13px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-right: 30px;
+    transition: background 0.3s ease;
+    font-size: 17px;
+    color: #383737;
+    margin-left: 35%;
+}
+
+.btn:hover {
+    background-color: #d8f823b0;
+    border: 3.5px solid #3a3a3ae9;
+}
+
+.bt {
+    background-color: #df951ed3;
+    border: 3px solid #3a3a3ae9;
+    font-weight: 600;
+    padding: 8px 17px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #383737;
+}
+
+.bt:hover {
+    background-color: #d8f823b0;
+    border: 3.5px solid #3a3a3ae9;
+}
+
+#detailed-info {
+    display: none;
+}
+
+#google_translate_element {
+
+    padding: 10px;
+    background-color: #ffeeda8b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.695);
+    border-radius: 12px;
+    width: fit-content;
+}
+
+/* Hide the Google logo */
+.skiptranslate>iframe.skiptranslate {
+    display: none !important;
+}
+
+/* Hide Google  */
+body>div.skiptranslate {
+    border: none !important;
+    background: transparent !important;
+}
+
+
+
+#disease-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 70%;
+}
+
+.disease-card {
+    background-color: #e0dbb9;
+    border: 5px solid #3a3a3ae9;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.557);
+    transition: transform 0.4s ease;
+}
+
+.disease-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.disease-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #3a3a3a;
+}
+
+.disease-card .translate {
+    display: inline-block;
+}
+
+.disease-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.disease-card a {
+    text-decoration: none;
+    background: linear-gradient(to left, rgb(182, 138, 4), rgb(131, 26, 26));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}
+
+.disease-card a:hover {
+    background: linear-gradient(to right, rgb(156, 41, 35), rgb(200, 27, 27));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.disease-card a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 782px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .navbar-container {
+        flex-direction: row;
+
+    }
+
+    .website-name {
+        font-size: 0px;
+
+    }
+
+    .subhead {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .navbar {
+        margin-right: 100px;
+        flex-direction: row;
+        width: 100%;
+        height: 10px;
+        margin-right: 50px;
+    }
+
+
+
+    .navbar a {
+        padding: 5px;
+        font-size: 15px;
+        width: fit-content;
+
+    }
+
+    .navlogo {
+        width: 50px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+
+
+    .title {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 12px;
+
+    }
+
+    .Homecontainer {
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 30%;
+        align-items: center;
+        width: 90%;
+    }
+
+    .card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-Homecontainer {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20%;
+
+
+    }
+
+    .btn,
+    .bt {
+        margin-right: 0;
+        width: fit-content;
+        text-align: center;
+    }
+
+    #disease-container {
+        margin: 10px;
+    }
+
+    .disease-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    #google_translate_element {
+        width: fit-content;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .website-name {
+        font-size: 0px;
+    }
+
+    .subhead {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .log {
+        width: 110px;
+
+    }
+
+
+    .container {
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        padding: 10px;
+        width: fit-content;
+    }
+
+    .btn,
+    .bt {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .Homecontainer {
+        flex-direction: column;
+        margin-top: 30%;
+        align-items: center;
+        width: 90%;
+    }
+}
